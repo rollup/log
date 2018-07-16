@@ -1,0 +1,6 @@
+
+const main = () => {
+
+};
+
+export main;
