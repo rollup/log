@@ -17,9 +17,12 @@
 [![chat][chat]][chat-url]
 [![size][size]][size-url]
 
+<p align="center">
 🌳
-
-![screenshot](./.github/screenshot-small.png)
+	<br>
+	<img src=".github/screenshot.svg" width="320">
+	<br>
+</p>
 
 A logger that provides targeted log levels and display options.
 

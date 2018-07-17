@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360" height="200">
+<rect width="360" height="200" rx="5" ry="5" class="a"/>
+<svg y="0%" x="0%">
+    <circle cx="20" cy="20" r="6" fill="#ff5f58"/>
+    <circle cx="40" cy="20" r="6" fill="#ffbd2e"/>
+    <circle cx="60" cy="20" r="6" fill="#18c132"/>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="173.68" viewBox="0 0 32 17.368" width="320" x="15" y="50">
+<style>
+  .normal { fill:#d0d2d0; font-weight: 100; }
+  .green { fill:#bec26e; }
+  .bold { font-weight: 900 }
+</style>
+<g font-size="1.5" font-family="Monaco,Consolas,Menlo,'Bitstream Vera Sans Mono','Powerline Symbols',monospace">
+    <defs>
+        <symbol id="1">
+          <text y="1.67" fill="#95b7d3">&#x24E1;</text>
+          <text x="2.5" y="1.67" class="normal">batman</text>
+        </symbol>
+        <symbol id="2">
+            <text y="1.67" fill="#f8c774">&#x24E1;</text>
+            <text x="2.5" y="1.67" class="normal">aliens</text>
+        </symbol>
+        <symbol id="3">
+            <text y="1.67" fill="#e7827d" font-weight="700">&#x24E1;</text>
+            <text x="2.5" y="1.67" class="normal">joker</text>
+        </symbol>
+        <symbol id="4">
+            <text y="1.67" fill="#bec26e">&#x24E1;</text>
+            <text x="2.5" y="1.67" class="normal">batcave</text>
+            <text x="9.614" y="1.67" class="green bold">clean</text>
+        </symbol>
+    </defs>
+    <path class="a" d="M0 0h32v17.368H0z"/>
+    <g>
+        <svg width="192">
+            <svg>
+                <use xlink:href="#1"/>
+                <use xlink:href="#2" y="2.271"/>
+                <use xlink:href="#3" y="4.542"/>
+                <use xlink:href="#4" y="8.884"/>
+            </svg>
+        </svg>
+    </g>
+</g>
+</svg>
+</svg>
