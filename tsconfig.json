@@ -3,15 +3,18 @@
     "allowSyntheticDefaultImports": true,
     "diagnostics": true,
     "downlevelIteration": false,
-    "lib": ["es5", "es6", "dom"],
+    "esModuleInterop": true,
+    "lib": ["es2017"],
+    "module": "commonjs",
     "noEmitOnError": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "outDir": "./dist",
     "pretty": true,
     "skipLibCheck": true,
-    "target": "es5"
+    "target": "es2017"
   },
   "include": [
     "typings/**/*.d.ts",

@@ -35,8 +35,15 @@
   "peerDependencies": {
     "rollup": "^latest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/uuid": "^3.4.3",
+    "chalk": "^2.4.1",
+    "loglevelnext": "^1.0.5",
+    "uuid": "^3.3.2"
+  },
   "devDependencies": {
+    "build": "tsc src/**/*.ts",
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-conventional": "^7.0.1",
     "@rollup-cabal/hull": "^0.1.3",
