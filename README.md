@@ -19,7 +19,7 @@
 
 🌳
 
-![screenshot](./.github/screenshot.png)
+![screenshot](./.github/screenshot-small.png)
 
 A logger that provides targeted log levels and display options.
 
