@@ -1,7 +1,7 @@
 import chalk from 'chalk';
 import loglevel from 'loglevelnext';
 import uuid from 'uuid/v4';
-import { Colors, Options, Prefix } from './types';
+import { Colors, Options, Prefix } from '../typings/types';
 
 import { StdErrorFactory } from './StdErrorFactory';
 
@@ -28,9 +28,10 @@ const defaults: Options = {
   timestamp: false
 };
 
-export const logger = (opts: Options) => {
+export const logger = (opts?: Options) => {
   const unique = { id: uuid() };
   const options: Options = {...defaults, ...unique, ...opts};
+
   const prefix: Prefix = {
     level: ({ level }: { level: string }) => colors[level],
     template: `{{level}} ${options.preface || ''}`
@@ -40,7 +41,9 @@ export const logger = (opts: Options) => {
     prefix.template = `[{{time}}] ${prefix.template}`;
   }
 
-  options.name = options.id;
+  if (!options.name) {
+    options.name = options.id;
+  }
 
   const log = loglevel.getLogger(options);
 

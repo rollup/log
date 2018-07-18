@@ -19,8 +19,7 @@
   "include": [
     "typings/**/*.d.ts",
     "src",
-    "bin",
-    "browser"
+    "bin"
   ],
   "exclude": [
     "dist",

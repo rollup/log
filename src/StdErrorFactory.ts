@@ -11,7 +11,7 @@ export class StdErrorFactory extends PrefixFactory {
   }
 
   bindMethod(obj: any, methodName: string) {
-    const targets = ['info', 'warn', 'error', 'pass'];
+    const targets = ['info', 'warn', 'error', 'pass', 'fail'];
     const useName = targets.includes(methodName) ? 'error' : methodName;
 
     return super.bindMethod(obj, useName);

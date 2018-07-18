@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`log auxillary 1`] = `
+Array [
+  "[32mⓡ[39m  batman",
+]
+`;
+
+exports[`log auxillary 2`] = `
+Array [
+  "[31mⓡ[39m  joker",
+]
+`;
+
+exports[`log debug, trace 1`] = `
+Array [
+  "[35mⓡ  debug:[39m batcave",
+]
+`;
+
+exports[`log debug, trace 2`] = `undefined`;
+
+exports[`log logger 1`] = `
+Array [
+  "[34mⓡ[39m  batman",
+]
+`;
+
+exports[`log preface 1`] = `
+Array [
+  "[34mⓡ[39m  ⋊ batcave ⋉batman",
+]
+`;
+
+exports[`log unique 1`] = `
+Array [
+  "[34mⓡ[39m  batman",
+]
+`;
+
+exports[`log unique 2`] = `undefined`;

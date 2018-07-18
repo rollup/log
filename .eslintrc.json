@@ -1,6 +1,6 @@
 {
   "parserOptions": {
-    "ecmaVersion": 6,
+    "ecmaVersion": 9,
     "sourceType": "module",
     "ecmaFeatures": {
       "generators": false,
@@ -8,6 +8,10 @@
     }
   },
   "rules": {
+    "prettier/prettier": [
+      "error",
+      { "arrowParens": "none", "singleQuote": true, "trailingComma": "es5" }
+    ],
     "strict": "error",
     "accessor-pairs": "off",
     "array-callback-return": "error",
@@ -432,10 +436,7 @@
         }
       }
     ],
-    "comma-dangle": [
-      "error",
-      "never"
-    ],
+    "comma-dangle": ["error", "never"],
     "comma-spacing": "off",
     "comma-style": "off",
     "computed-property-spacing": "off",
@@ -664,7 +665,8 @@
     "mocha": true
   },
   "plugins": [
-    "import"
+    "import",
+    "prettier"
   ],
   "settings": {
     "import/resolver": {
