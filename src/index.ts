@@ -19,6 +19,8 @@ const colors: Colors = {
   info: chalk`{blue ⓡ} `,
   warn: chalk`{yellow ⓡ} `,
   error: chalk`{red ⓡ} `,
+  pass: chalk`{green ⓡ} `,
+  fail: chalk`{red ⓡ} `
 };
 
 const defaults: Options = {

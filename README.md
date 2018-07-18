@@ -131,7 +131,7 @@ Displays output to `stderr` prefaced with `ⓡ` colored yellow.
 
 #### .error(text: `string`)
 
-Displays output to `stderr` prefaced with `ⓡ` colored blue.
+Displays output to `stderr` prefaced with `ⓡ` colored red.
 
 #### .debug(text: `string`)
 
@@ -141,6 +141,16 @@ Displays output to `stdout` prefaced with `ⓡ` colored magenta.
 
 Displays trace output akin to `console.trace` to `stdout` prefaced with `ⓡ`
 colored cyan.
+
+#### .pass(text: `string`)
+
+Displays output to `stderr` prefaced with `ⓡ` colored green. The output is
+persisted regardless of the set `level`.
+
+#### .fail(text: `string`)
+
+Displays output to `stderr` prefaced with `ⓡ` colored red. The output is
+persisted regardless of the set `level`.
 
 ## Meta
 
