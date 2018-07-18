@@ -33,6 +33,7 @@
   "files": [
     "dist/",
     "lib/",
+    "typings",
     "index.js"
   ],
   "peerDependencies": {
