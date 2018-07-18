@@ -24,13 +24,13 @@ const colors: Colors = {
 };
 
 const defaults: Options = {
-  id: uuid(),
   level: LogLevel.info,
   timestamp: false
 };
 
 export const logger = (opts: Options) => {
-  const options: Options = {...defaults, ...opts};
+  const unique = { id: uuid() };
+  const options: Options = {...defaults, ...unique, ...opts};
   const prefix: Prefix = {
     level: ({ level }: { level: string }) => colors[level],
     template: `{{level}} ${options.preface || ''}`
