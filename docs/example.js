@@ -1,5 +1,6 @@
 const chalk = require('chalk');
 
+// eslint-disable-next-line import/no-unresolved
 const { logger } = require('../dist/index');
 
 const log = logger({ level: 'debug' });
