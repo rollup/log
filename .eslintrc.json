@@ -10,7 +10,7 @@
   "rules": {
     "prettier/prettier": [
       "error",
-      { "arrowParens": "none", "singleQuote": true, "trailingComma": "es5" }
+      { "arrowParens": "avoid", "singleQuote": true, "trailingComma": "none" }
     ],
     "strict": "error",
     "accessor-pairs": "off",
@@ -22,10 +22,7 @@
         "exceptMethods": []
       }
     ],
-    "complexity": [
-      "off",
-      11
-    ],
+    "complexity": ["off", 11],
     "consistent-return": "error",
     "curly": "off",
     "default-case": [
@@ -57,11 +54,7 @@
     "no-empty-function": [
       "error",
       {
-        "allow": [
-          "arrowFunctions",
-          "functions",
-          "methods"
-        ]
+        "allow": ["arrowFunctions", "functions", "methods"]
       }
     ],
     "no-empty-pattern": "error",
@@ -169,11 +162,7 @@
     "no-warning-comments": [
       "off",
       {
-        "terms": [
-          "todo",
-          "fixme",
-          "xxx"
-        ],
+        "terms": ["todo", "fixme", "xxx"],
         "location": "start"
       }
     ],
@@ -262,12 +251,7 @@
       {
         "ignoreCase": false,
         "ignoreMemberSort": false,
-        "memberSyntaxSortOrder": [
-          "none",
-          "all",
-          "multiple",
-          "single"
-        ]
+        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
       }
     ],
     "symbol-description": "error",
@@ -310,10 +294,7 @@
     "import/no-commonjs": "off",
     "import/no-amd": "error",
     "import/no-nodejs-modules": "off",
-    "import/first": [
-      "error",
-      "absolute-first"
-    ],
+    "import/first": ["error", "absolute-first"],
     "import/imports-first": "off",
     "import/no-duplicates": "error",
     "import/no-namespace": "error",
@@ -328,14 +309,7 @@
     "import/order": [
       "warn",
       {
-        "groups": [
-          "builtin",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "index"
-        ],
+        "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
         "newlines-between": "always-and-inside-groups"
       }
     ],
@@ -362,10 +336,7 @@
     "callback-return": "off",
     "global-require": "warn",
     "handle-callback-err": "off",
-    "no-mixed-requires": [
-      "off",
-      false
-    ],
+    "no-mixed-requires": ["off", false],
     "no-new-require": "error",
     "no-path-concat": "error",
     "no-process-env": "off",
@@ -373,10 +344,7 @@
     "no-restricted-modules": "off",
     "no-sync": "off",
     "no-await-in-loop": "error",
-    "no-cond-assign": [
-      "error",
-      "always"
-    ],
+    "no-cond-assign": ["error", "always"],
     "no-console": "warn",
     "no-constant-condition": "warn",
     "no-control-regex": "error",
@@ -467,10 +435,7 @@
         "applyDefaultPatterns": true
       }
     ],
-    "linebreak-style": [
-      "error",
-      "unix"
-    ],
+    "linebreak-style": ["error", "unix"],
     "lines-around-comment": "off",
     "lines-around-directive": [
       "error",
@@ -479,10 +444,7 @@
         "after": "always"
       }
     ],
-    "max-depth": [
-      "off",
-      4
-    ],
+    "max-depth": ["off", 4],
     "max-len": "off",
     "max-lines": [
       "off",
@@ -493,20 +455,14 @@
       }
     ],
     "max-nested-callbacks": "off",
-    "max-params": [
-      "off",
-      3
-    ],
+    "max-params": ["off", 3],
     "max-statements-per-line": [
       "off",
       {
         "max": 1
       }
     ],
-    "max-statements": [
-      "off",
-      10
-    ],
+    "max-statements": ["off", 10],
     "multiline-ternary": "off",
     "new-cap": [
       "error",
@@ -514,11 +470,7 @@
         "newIsCap": true,
         "newIsCapExceptions": [],
         "capIsNew": false,
-        "capIsNewExceptions": [
-          "Immutable.Map",
-          "Immutable.Set",
-          "Immutable.List"
-        ]
+        "capIsNewExceptions": ["Immutable.Map", "Immutable.Set", "Immutable.List"]
       }
     ],
     "new-parens": "off",
@@ -532,9 +484,7 @@
     "no-lonely-if": "error",
     "no-mixed-operators": "off",
     "no-mixed-spaces-and-tabs": "off",
-    "no-multi-assign": [
-      "error"
-    ],
+    "no-multi-assign": ["error"],
     "no-multiple-empty-lines": "off",
     "no-negated-condition": "off",
     "no-nested-ternary": "off",
@@ -545,20 +495,14 @@
         "allowForLoopAfterthoughts": true
       }
     ],
-    "no-restricted-syntax": [
-      "error",
-      "LabeledStatement",
-      "WithStatement"
-    ],
+    "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"],
     "no-tabs": "off",
     "no-ternary": "off",
     "no-trailing-spaces": "off",
     "no-underscore-dangle": [
       "error",
       {
-        "allow": [
-          "__dirname"
-        ],
+        "allow": ["__dirname"],
         "allowAfterThis": true
       }
     ],
@@ -573,14 +517,8 @@
     "object-curly-spacing": "off",
     "object-property-newline": "off",
     "one-var-declaration-per-line": "off",
-    "one-var": [
-      "error",
-      "never"
-    ],
-    "operator-assignment": [
-      "error",
-      "always"
-    ],
+    "one-var": ["error", "never"],
+    "operator-assignment": ["error", "always"],
     "operator-linebreak": "off",
     "padded-blocks": "off",
     "quote-props": "off",
@@ -607,24 +545,12 @@
       "always",
       {
         "line": {
-          "exceptions": [
-            "-",
-            "+"
-          ],
-          "markers": [
-            "=",
-            "!"
-          ]
+          "exceptions": ["-", "+"],
+          "markers": ["=", "!"]
         },
         "block": {
-          "exceptions": [
-            "-",
-            "+"
-          ],
-          "markers": [
-            "=",
-            "!"
-          ],
+          "exceptions": ["-", "+"],
+          "markers": ["=", "!"],
           "balanced": false
         }
       }
@@ -664,27 +590,15 @@
     "jest": true,
     "mocha": true
   },
-  "plugins": [
-    "import",
-    "prettier"
-  ],
+  "plugins": ["import", "prettier"],
   "settings": {
     "import/resolver": {
       "node": {
-        "extensions": [
-          ".js",
-          ".json"
-        ]
+        "extensions": [".js", ".json"]
       }
     },
-    "import/extensions": [
-      ".js",
-      ".jsx"
-    ],
+    "import/extensions": [".js", ".jsx"],
     "import/core-modules": [],
-    "import/ignore": [
-      "node_modules",
-      "\\.(coffee|scss|css|less|hbs|svg|json)$"
-    ]
+    "import/ignore": ["node_modules", "\\.(coffee|scss|css|less|hbs|svg|json)$"]
   }
 }

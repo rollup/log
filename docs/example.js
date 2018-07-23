@@ -14,7 +14,7 @@ log.debug('batcave');
 
 console.log();
 
-timeLog.info('time to wash the batmobile')
+timeLog.info('time to wash the batmobile');
 
 console.log();
 
