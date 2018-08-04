@@ -11,7 +11,7 @@ const enum LogLevel {
   info = 'info',
   warn = 'warn',
   error = 'error'
-};
+}
 
 const colors: Colors = {
   trace: chalk`{cyan ⓡ} `,
@@ -25,12 +25,13 @@ const colors: Colors = {
 
 const defaults: Options = {
   level: LogLevel.info,
-  timestamp: false
+  timestamp: false,
+  stderr: ['info', 'warn', 'error', 'pass', 'fail']
 };
 
 export const logger = (opts?: Options) => {
   const unique = { id: uuid() };
-  const options: Options = {...defaults, ...unique, ...opts};
+  const options: Options = { ...defaults, ...unique, ...opts };
 
   const prefix: Prefix = {
     level: ({ level }: { level: string }) => colors[level],
@@ -47,16 +48,15 @@ export const logger = (opts?: Options) => {
 
   const log = loglevel.getLogger(options);
 
-  log.factory = new StdErrorFactory(log, prefix);
+  log.factory = new StdErrorFactory(log, prefix, options.stderr);
 
   return log;
 };
-
 
 export default logger;
 
 export function deleteLogger(id: string) {
   delete loglevel.loggers[id];
-};
+}
 
 export const factories = loglevel.factories;

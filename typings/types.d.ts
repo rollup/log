@@ -1,6 +1,5 @@
-
 export interface Colors {
-	[key: string]: string;
+  [key: string]: string;
 }
 
 export interface Prefix {
@@ -10,9 +9,10 @@ export interface Prefix {
 
 export interface Options {
   id?: string;
-	level?: LogLevel;
+  level?: LogLevel;
   name?: string;
   preface?: string;
   prefix?: Prefix;
-	timestamp?: boolean;
+  timestamp?: boolean;
+  stderr?: string[];
 }

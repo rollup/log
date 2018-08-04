@@ -118,6 +118,29 @@ log.info('batman');
 //→ [00:00:00] ⓡ batman
 ```
 
+##### stderr
+
+Type: `Array[string]`<br>
+Default: `['info', 'warn', 'error', 'pass', 'fail']`
+
+Defines the levels which output to `stderr` by default. This setting is useful
+for directing select loggers to output only specific levels to `stderr` while
+allowing other levels to output to `stdout`.
+
+```js
+import { logger } from '@rollup-cabal/log';
+
+const log = logger({ stderr: ['warn', 'error'] });
+
+log.info('batman');
+
+// stdout → ⓡ batman
+
+log.warn('riddler');
+
+// stderr → ⓡ riddler
+```
+
 ### Instance
 
 #### .info(text: `string`)
