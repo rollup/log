@@ -3,8 +3,9 @@
     "allowSyntheticDefaultImports": true,
     "diagnostics": true,
     "downlevelIteration": false,
-    "esModuleInterop": true,
-    "lib": ["es2017"],
+    "lib": [
+      "es7"
+    ],
     "module": "commonjs",
     "noEmitOnError": true,
     "noImplicitAny": true,
@@ -14,12 +15,11 @@
     "outDir": "./dist",
     "pretty": true,
     "skipLibCheck": true,
-    "target": "es2017"
+    "target": "es6"
   },
   "include": [
     "typings/**/*.d.ts",
-    "src",
-    "bin"
+    "src"
   ],
   "exclude": [
     "dist",

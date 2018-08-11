@@ -12,7 +12,7 @@
   "bugs": "https://github.com/rollup-cabal/log/issues",
   "bin": "",
   "main": "dist/index.js",
-  "types": "typings/types.d.ts",
+  "types": "types/index.d.ts",
   "engines": {
     "node": ">= 6.14.3"
   },
@@ -42,14 +42,14 @@
     "index.js"
   ],
   "peerDependencies": {
-    "rollup" : "^latest"
+    "rollup": "^latest"
   },
   "dependencies": {
     "@types/chalk": "^2.2.0",
     "@types/uuid": "^3.4.3",
     "chalk": "^2.4.1",
-    "loglevelnext": "^1.0.5",
-    "uuid": "^3.3.2"
+    "loglevelnext": "^2.0.1",
+    "uuid": "github:shellscape/node-uuid"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
@@ -71,11 +71,11 @@
     "lint-staged": "^7.2.0",
     "pre-commit": "^1.2.2",
     "prettier": "^1.13.7",
-    "rollup": "^0.62.0",
+    "rollup": "^0.64.1",
     "standard-version": "^4.4.0",
     "ts-jest": "^23.0.0",
     "tslint": "^5.11.0",
-    "typescript": "^2.9.2"
+    "typescript": "^3.0.1"
   },
   "keywords": [
     "rollup"

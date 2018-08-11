@@ -1,7 +1,7 @@
 import chalk from 'chalk';
-import loglevel from 'loglevelnext';
+import loglevel, { MethodFactory } from 'loglevelnext';
 import uuid from 'uuid/v4';
-import { Colors, Options, Prefix } from '../typings/types';
+import { Colors, Logger, Options, Prefix } from '../types';
 
 import { StdErrorFactory } from './StdErrorFactory';
 
@@ -29,7 +29,7 @@ const defaults: Options = {
   stderr: ['info', 'warn', 'error', 'pass', 'fail']
 };
 
-export const logger = (opts?: Options) => {
+export function logger(opts?: Options): Logger {
   const unique = { id: uuid() };
   const options: Options = { ...defaults, ...unique, ...opts };
 
@@ -47,16 +47,17 @@ export const logger = (opts?: Options) => {
   }
 
   const log = loglevel.getLogger(options);
+  const factory = new StdErrorFactory(log, prefix, options.stderr);
 
-  log.factory = new StdErrorFactory(log, prefix, options.stderr);
+  log.factory = <MethodFactory>factory;
 
-  return log;
-};
-
-export default logger;
+  return <Logger>log;
+}
 
 export function deleteLogger(id: string) {
   delete loglevel.loggers[id];
 }
 
 export const factories = loglevel.factories;
+
+export default logger;

@@ -2,7 +2,7 @@ import loglevel from 'loglevelnext';
 
 const { PrefixFactory } = loglevel.factories;
 
-export class StdErrorFactory extends PrefixFactory {
+export class StdErrorFactory extends PrefixFactory implements StdErrorFactory {
   logger: any;
   stderr: any[];
 

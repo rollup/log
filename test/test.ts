@@ -1,9 +1,8 @@
 import mockConsole from 'jest-mock-console';
 
-import { logger } from '../src';
+import logger from '../src';
 
 describe('log', () => {
-
   beforeEach(() => {
     mockConsole(['error', 'log', 'trace']);
   });
