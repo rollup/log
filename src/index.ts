@@ -1,6 +1,6 @@
 import chalk from 'chalk';
 import loglevel, { MethodFactory } from 'loglevelnext';
-import uuid from 'uuid/v4';
+import {v4 as uuid} from 'uuid';
 import { Colors, Logger, Options, Prefix } from '../types';
 
 import { StdErrorFactory } from './StdErrorFactory';
@@ -46,7 +46,7 @@ export function logger(opts?: Options): Logger {
     options.name = options.id;
   }
 
-  const log = loglevel.getLogger(options);
+  const log = loglevel.create(options);
   const factory = new StdErrorFactory(log, prefix, options.stderr);
 
   log.factory = <MethodFactory>factory;
